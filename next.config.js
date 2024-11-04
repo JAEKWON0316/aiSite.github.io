@@ -4,8 +4,8 @@ const nextConfig = {
   
 
   output: 'export',
-  basePath: isProd ? '/dcsAI.github.io/home' : '',
-  assetPrefix: isProd ? '/dcsAI.github.io/' : '',
+  basePath: isProd ? '/dcsAI.github.io' : '',
+  assetPrefix: isProd ? '/dcsAI.github.io' : '',
   images: {
     domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
     unoptimized: true,
