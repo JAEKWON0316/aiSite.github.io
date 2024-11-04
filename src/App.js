@@ -5,12 +5,8 @@ import Home from './pages/_app.tsx';
 function App() {
   return (
 
-  
-     
               <Home />
-        
-  
-  
+          
   );
 }
 
