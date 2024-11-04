@@ -2,6 +2,7 @@
   "name": "sitezz",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://daecheongse.com", 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -28,7 +29,9 @@
     "eject": "react-scripts eject",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "deploy": "next build && gh-pages -d out -b gh-pages"
   },
   "eslintConfig": {
     "extends": [
@@ -47,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
