@@ -2,7 +2,7 @@
   "name": "sitezz",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/JAEKWON0316/dcsAI.github.io", 
+  "homepage": "https://daecheongse.com", 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -31,9 +31,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "next build && echo. > out\\.nojekyll && git add -f out/ && git commit -m \"Deploy\" || exit 0 && git fetch origin gh-pages && git checkout gh-pages && git merge main && git subtree push --prefix out origin gh-pages || (echo 'Deployment failed' && exit 1)"
-
-
+    "deploy": "next build && next export && gh-pages -d out -b gh-pages"
   },
   "eslintConfig": {
     "extends": [
