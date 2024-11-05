@@ -2,10 +2,9 @@
 const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   
-
   output: 'export',
-  basePath: isProd ? '/dcsAI.github.io' : '',
-  assetPrefix: isProd ? '/dcsAI.github.io' : '',
+  basePath: '',
+  assetPrefix: '',
   images: {
     domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
     unoptimized: true,
