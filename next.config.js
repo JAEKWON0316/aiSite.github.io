@@ -3,8 +3,8 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   
   output: 'export',
-  basePath: '',
-  assetPrefix: '',
+  basePath: isProd ? '/aiSite.github.io' : '',
+  assetPrefix: isProd ? '/aiSite.github.io' : '',
   images: {
     domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
     unoptimized: true,
